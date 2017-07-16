@@ -24,11 +24,12 @@
 ![image1](img/image1.png)
 
 Lift - Long press를 통해 해당 item의 preview를 들어올린다.
+
 Drag - Tap을 통해 여러개의 Item들을 Drag할 수 있다.
+
 Set Down - Drag이후 내려놓고자하는 경우 Cancel이 가능하며 해당 Target에 Drop할 수 있다.
+
 Data Transfer - 성공적으로 Drop되면 Background에서 동작되며 File Provider에 의해 Drag한 item을 Lazy하게 전달할 수 있다.
-
-
 
 ![image2](img/image2.png)
 ###### -Enabling Drag  
