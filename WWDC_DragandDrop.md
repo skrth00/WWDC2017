@@ -47,7 +47,7 @@ Drop Proposal이 전달하는 drag events를 Delegate가 응답한다.
 터치를 떼어버리면 Drag를 유지하는 session은 취소되고 다시 돌아간다.
 Drop이 받아들여지면 perform drop을 delegate에게 요청한다.
 ###### -Data 전송 단계  
-perform drop을 요청받은 delegate는 Drag Items에 내장되어있던 ItemProvider에게 data representation of items을 요청한다.
+perform drop을 요청받은 delegate는 Drag Items에 내장되어있던 ItemProvider에게 item들의 data representation을 요청한다.
 요청받은 ItemProvider는 비동기로 data를 전송한다.
 
 
@@ -57,7 +57,7 @@ perform drop을 요청받은 delegate는 Drag Items에 내장되어있던 ItemPr
 ![image3](img/image3.png)
 ##### Begins
 ```sh
-func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning         session:UIDragSession) -> [UIDragItem] { 
+func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session:UIDragSession) -> [UIDragItem] { 
     let itemProvider = NSItemProvider(object: "Hello World" as NSString) 
     let dragItem = UIDragItem(itemProvider: itemProvider)
 
